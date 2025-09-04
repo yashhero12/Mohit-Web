@@ -42,12 +42,9 @@ const cards = document.querySelectorAll('.card');
 const scrollBtn = document.getElementById("scrollTopBtn");
 
 
-// Scroll to top when clicked
+
 scrollBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+  document.getElementById("services").scrollIntoView({ behavior: "smooth" });
 });
 
 
@@ -62,5 +59,11 @@ const menuToggle = document.getElementById('menu-toggle');
 
 document.getElementById("viewWorkBtn").addEventListener("click", function () {
   document.getElementById("best-edits").scrollIntoView({ behavior: "smooth" });
+});
+
+
+
+document.getElementById("scrollTopBtn").addEventListener("click", function () {
+  document.getElementById("services").scrollIntoView({ behavior: "smooth" });
 });
   
